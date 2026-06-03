@@ -17,7 +17,7 @@
 
 The latest versions of Providra can always be found on the **[Releases page](https://github.com/dtankdempsey2/Providra/releases)**.
 
-### Current Open Beta: `v0.1.0-beta.2`
+### Current Open Beta: `v0.1.0-beta.3`
 
 | Device Architecture | Download                                                                                                                                                         |
 | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
