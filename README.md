@@ -18,12 +18,12 @@
 
 The latest versions of Providra can always be found on the **[Releases page](https://github.com/dtankdempsey2/Providra/releases)**.
 
-### Current Open Beta: `v0.1.0-beta.3`
+### Current Open Beta: `v0.1.0-beta.5`
 
 | Device Architecture | Download                                                                                                                                                         |
 | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `arm64-v8a`         | [Download Providra for 64-bit Android devices](https://github.com/dtankdempsey2/Providra/releases/download/v0.1.0-beta.3/providra-v0.1.0-beta.3-arm64-v8a.apk)   |
-| `armeabi-v7a`       | [Download Providra for 32-bit Android devices](https://github.com/dtankdempsey2/Providra/releases/download/v0.1.0-beta.3/providra-v0.1.0-beta.3-armeabi-v7a.apk) |
+| `arm64-v8a`         | [Download Providra for 64-bit Android devices](https://github.com/dtankdempsey2/Providra/releases/download/v0.1.0-beta.5/providra-v0.1.0-beta.5-arm64-v8a.apk)   |
+| `armeabi-v7a`       | [Download Providra for 32-bit Android devices](https://github.com/dtankdempsey2/Providra/releases/download/v0.1.0-beta.5/providra-v0.1.0-beta.5-armeabi-v7a.apk) |
 
 > [!TIP]
 > Most modern Android phones, Android TV devices, and Fire TV devices use the `arm64-v8a` version.
