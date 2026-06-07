@@ -1,6 +1,7 @@
 <div align="center">
 
-<img width="1672" height="941" alt="Providra" src="https://github.com/user-attachments/assets/92008b85-e114-4d19-b08e-e4c78ac141b0" />
+<img width="1672" height="941" alt="main-logo" src="https://github.com/user-attachments/assets/6984e645-de76-4861-b5e1-d039922c3479" />
+
 
 ### Bridge compatible Stremio addons and Nuvio plugins into Syncler
 
