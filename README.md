@@ -18,7 +18,7 @@
 
 The latest versions of Providra can always be found on the **[Releases page](https://github.com/dtankdempsey2/Providra/releases)**.
 
-### Current Open Beta: `v0.1.0-beta.5`
+### Current Open Beta: `v0.1.0-beta.5` - Now Supports Addons and Plugins Together
 
 | Device Architecture | Download                                                                                                                                                         |
 | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -60,6 +60,20 @@ The setup process is simple:
 6. Add that URL to Syncler.
 
 Once everything is configured, Providra handles the communication between Syncler and your selected addons or plugins.
+
+> [!NOTE]
+> **Using AIOStreams?**
+>
+> During testing, the following AIOStreams instance worked correctly as an Addon:
+>
+> `https://aiostreamsfortheweebsstable.midnightignite.me` — [Open ↗](https://aiostreamsfortheweebsstable.midnightignite.me)
+>
+> It is recommended to use this instance instead of:
+>
+> `https://aiostreams.elfhosted.com/`
+>
+> The ElfHosted instance would not play during testing. Third-party service availability and compatibility may change over time.
+
 
 ## 🚀 Why Use Providra?
 
