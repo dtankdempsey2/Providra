@@ -21,7 +21,7 @@
 | Your setup | Recommended approach |
 |---|---|
 | Syncler Stable `2.0.1.3.2 (v24421302)` | Prefer unconfigured Stremio addon manifests and magnet-style results. |
-| Syncler beta `2.1.1.7 (v302010107)` or higher | Configured or unconfigured manifests are supported. Direct streams have worked correctly during testing. |
+| Syncler beta `2.1.1.7 (v302010107)` or higher | Configured or unconfigured addon manifests are supported. Direct streams have worked correctly during testing. |
 | Direct addon or plugin streams | Turn off `Skip resolving non-debrid sources`. |
 | Missing valid direct links | Temporarily turn off Smart Title Filtering. |
 | More links appear on a second scrape | Increase Repeated Calls, then reinstall the generated package. |
