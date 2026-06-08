@@ -151,7 +151,8 @@ https://comet.stremio.ru/manifest.json
 
 ## How sources are processed
 
-Each addon result is processed independently based on its actual source type.
+Each addon result is processed independently based on its actual source type. Resolved direct streams are cached for up to 3 hours to speed up Syncler probe requests and streaming. After the cache expires, the next request fetches the source again and repeats the same cycle.
+
 
 ```mermaid
 flowchart LR
@@ -232,7 +233,7 @@ AIOStreams may return magnet links, raw `infoHash` values, direct debrid links, 
 
 | Syncler version | AIOStreams recommendation |
 |---|---|
-| Stable | Leave unconfigured whenever possible, so AIOStreams returns magnet-style results instead of direct links. |
+| Stable `2.0.1.3.2 (v24421302)` | Leave unconfigured whenever possible, so AIOStreams returns magnet-style results instead of direct links. |
 | Beta `2.1.1.7 (v302010107)` or higher | AIOStreams can return magnet links and direct streams together. |
 
 ---
