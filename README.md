@@ -63,20 +63,6 @@ The setup process is simple:
 
 Once everything is configured, Providra handles the communication between Syncler and your selected addons or plugins.
 
-> [!NOTE]
-> **Using AIOStreams?**
->
-> During testing, the following AIOStreams instance worked correctly as an Addon:
->
-> `https://aiostreamsfortheweebsstable.midnightignite.me` — [Open ↗](https://aiostreamsfortheweebsstable.midnightignite.me)
->
-> It is recommended to use this instance instead of:
->
-> `https://aiostreams.elfhosted.com/`
->
-> The ElfHosted instance would not play during testing. Third-party service availability and compatibility may change over time.
-
-
 ## 🚀 Why Use Providra?
 
 Syncler provides an excellent interface for browsing and watching movies and TV shows, but it does not search for playable source links by itself. Users have to install third-party vendor packages containing custom scrapers that locate sources for Syncler to display and play.
