@@ -53,19 +53,19 @@
 
 For a stable Syncler release such as `2.0.1.3.2 (v24421302)`, use **unconfigured Stremio addon manifests** whenever possible.
 
-A configured addon will often return direct hosting links instead of magnet links. Many direct-stream services return the playable file through an HTTP `302` redirect. During testing, the stable Syncler player did not reliably follow these redirects and displayed:
+A configured addon will often return direct hosting links instead of magnet links. Many of these addon services will return the playable file through an HTTP `302` redirect. During testing, the stable Syncler player did not follow these redirects and displayed:
 
 ```text
 Source error — Response code: 302
 ```
 
-For the most reliable stable-version experience, use addon configurations that return magnet links.
+When using the stable Syncler release instead of the beta version, use unconfigured addons, meaning you have not entered your debrid API key, so that they return only magnet links.
 
 ### Syncler Beta or higher
 
-For `Syncler beta 2.1.1.7 (v302010107)` or higher, direct streams have worked correctly during testing. These versions appear to follow the redirects commonly used by debrid and hosting services.
+For `Syncler beta 2.1.1.7 (v302010107)` or higher, direct streams have worked correctly during testing. These versions appear to follow the redirects commonly used by configured Stremio addons.
 
-Configured Stremio addons are fine on these versions. They may return magnets, direct debrid links, direct hosting links, or a mixture of source types.
+Configured Stremio addons work correctly with Syncler beta versions. They may return magnet links, direct debrid links, direct hosting links, or a mixture of source types.
 
 ---
 
@@ -97,8 +97,8 @@ Compatible plugins use a manifest containing a scraper list. Each enabled scrape
 
 | Syncler version | Recommended Stremio addon setup | Direct-stream behavior |
 |---|---|---|
-| Stable `2.0.1.3.2 (v24421302)` | Prefer unconfigured manifests | Magnet links are the safer option. Direct redirects may fail with a `302` source error. |
-| Beta `2.1.1.7 (v302010107)` or higher | Configured or unconfigured manifests | Direct-stream redirects have worked during testing. |
+| Stable `2.0.1.3.2 (v24421302)` | Use unconfigured manifest URLs. | Magnet links are the safer option. Direct redirects may fail with a `302` source error. |
+| Beta `2.1.1.7 (v302010107)` or higher | Configured or unconfigured manifest URLs. | Direct-stream redirects have worked during testing. |
 
 The important distinction is whether a configured addon returns a direct stream URL instead of a magnet link. A direct stream is not inherently broken; the stable Syncler player may simply refuse to follow the redirect used by the source host.
 
