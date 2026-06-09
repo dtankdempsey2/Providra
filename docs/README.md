@@ -11,8 +11,8 @@
 </div>
 
 > [!IMPORTANT]
-> **Syncler Stable Version:** Use **unconfigured debrid Stremio addons**, which return only magnet-style results.<br><br>
-> **Syncler Beta Version:** Use configured or unconfigured debrid Stremio addons. These addons can return magnets or direct links. Within Syncler’s settings, turn off `Skip resolving non-debrid sources`.
+> **[Syncler Stable Version:](https://syncler.net/)** Use **unconfigured debrid Stremio addons**, which return only magnet-style results.<br><br>
+> **[Syncler Beta Version:](https://beta.syncler.net/)** Use configured or unconfigured debrid Stremio addons. These addons can return magnets or direct links. Within Syncler’s settings, turn off `Skip resolving non-debrid sources`.
 
 ---
 
