@@ -19,6 +19,7 @@
 <details>
 <summary><strong>Table of contents</strong></summary>
 
+- [TMDB API key required](#tmdb-api-key-required)
 - [Quick setup](#quick-setup)
 - [Addons and plugins](#addons-and-plugins)
 - [Required setting for direct streams](#required-setting-for-direct-streams)
@@ -32,6 +33,18 @@
 - [Troubleshooting](#troubleshooting)
 
 </details>
+
+---
+
+<a id="tmdb-api-key-required"></a>
+## 🔑 TMDB API Key Required
+
+Providra requires a free TMDB API key to function.
+
+You can create a TMDB account and request your API key by following the official [TMDB API Getting Started guide](https://developer.themoviedb.org/docs/getting-started).
+
+> [!TIP]
+> TMDB recommends completing the API key registration process from a desktop browser.
 
 ---
 
