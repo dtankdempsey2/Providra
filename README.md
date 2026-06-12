@@ -14,29 +14,6 @@
 > **Providra is currently in open beta.**
 > Bugs and compatibility issues may still occur. Feedback and bug reports are appreciated while the app continues to improve.
 
-## 🌐 Hosted Version
-
-Providra is also available as a lightweight hosted web version at **[providra.com](https://providra.com/)**.
-
-The hosted version supports compatible **Stremio addons** and does not require downloading an APK or setting up your own server.
-
-### Quick Start
-
-1. Open **[providra.com](https://providra.com/)**.
-2. Enter your Stremio addon name.
-3. Generate and copy your vendor URL.
-4. Add the vendor URL in Syncler.
-5. Enter your addon manifest URL when prompted.
-
-> [!NOTE]
-> The hosted version currently supports **Stremio addons only** and uses rate limiting.
-> For Nuvio plugin support, unrestricted usage, and additional features, use the downloadable version below.
-
-> [!WARNING]
-> The hosted instance is provided as a free, best-effort service. Availability is not guaranteed.
-> If demand places excessive strain on the server, access may be limited, suspended, or discontinued without notice.
-> For the most reliable experience, use the downloadable self-hosted version. Docker and Node.js deployment options are also coming soon.
-
 ## 📥 Download
 
 The latest versions of Providra can always be found on the **[Releases page](https://github.com/dtankdempsey2/Providra/releases)**.
