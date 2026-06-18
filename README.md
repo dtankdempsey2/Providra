@@ -45,7 +45,7 @@ The latest versions of Providra can always be found on the **[Releases page](htt
 
 ### Current Open Beta: `v0.1.0-beta.7`
 
-For the best experience, it is recommended that you use `Syncler beta 2.1.1.7 (v302010107)` or higher, especially when using configured Stremio addon manifests that return debrid resolved links. [Get the Syncler Beta Version Here](https://beta.syncler.net/)
+Syncler Stable `2.1.5.1` or higher is required for the best experience, especially when using configured Stremio addon manifests that return debrid-resolved links.
 
 | Device Architecture | Download                                                                                                                                                         |
 | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
