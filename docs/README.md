@@ -11,8 +11,9 @@
 </div>
 
 > [!IMPORTANT]
-> **[Syncler Stable Version:](https://syncler.net/)** Use **unconfigured debrid Stremio addons**, which return only magnet-style results.<br><br>
-> **[Syncler Beta Version:](https://beta.syncler.net/)** Use configured or unconfigured debrid Stremio addons. These addons can return magnets or direct links. Within Syncler’s settings, turn off `Skip resolving non-debrid sources`.
+> **[Syncler Stable Version:](https://syncler.net/)** Use **Syncler Stable `2.1.5.1` or higher**.<br><br>
+> **[Syncler Beta Version:](https://beta.syncler.net/)** The beta version is also supported.<br><br>
+> Providra supports configured or unconfigured debrid Stremio addons. These addons can return magnets, direct links, or mixed results. When using direct streams, turn off `Skip resolving non-debrid sources` in Syncler’s resolving settings.
 
 ---
 
@@ -50,23 +51,17 @@ You can create a TMDB account and request your API key by following the official
 
 ## Quick setup
 
-### Syncler Stable
+Use **Syncler Beta** or **Syncler Stable `2.1.5.1` or higher**. Configured and unconfigured debrid Stremio addons are both supported.
 
-For a stable Syncler release such as `2.0.1.3.2 (v24421302)`, use **unconfigured debrid Stremio addons**. This means leaving your debrid API key blank so the addons return only magnet-style results instead of debrid-resolved direct streams.
+Configured addons may return direct debrid links, direct hosting links, magnet links, raw `infoHash` values, or a mixture of source types. Providra processes each result based on what the addon actually returns, so you do not need to force addons into magnet-only mode.
 
-When you enter your debrid API key inside a Stremio addon, the configured addon will often return direct hosting links instead of magnet links. Many addon services return the playable file through an HTTP `302` redirect. During testing, the current stable version of Syncler did not follow these redirects and displayed:
+When using configured addons or any direct-source results, keep your configured manifest URLs private and turn off `Skip resolving non-debrid sources` under:
 
 ```text
-Source error — Response code: 302
+Settings → Source → Resolving
 ```
 
-If you are using Syncler Stable, leave the debrid settings in the Stremio addon unconfigured so that it returns magnet-style results only. Add your debrid service credentials in Syncler instead.
-
-### Syncler Beta or Higher (Recommended)
-
-For `Syncler beta 2.1.1.7 (v302010107)` or higher, direct streams have worked correctly during testing. These versions appear to follow the redirects commonly used by Stremio addons when a debrid service is configured.
-
-With Syncler beta versions, you can enter your debrid API key inside a Stremio addon. The configured addon may return magnet links, direct debrid links, direct hosting links, or a mixture of source types.
+Add your Stremio addon manifest URLs, Nuvio plugin URLs, or both, then reinstall the Providra Express package whenever you change manifest URLs or Repeated Calls.
 
 ---
 
@@ -212,12 +207,9 @@ The 3-hour cache prevents repeated resolver calls every time the player requests
 
 AIOStreams is handled as a Stremio addon. It keeps a recognizable label and slower request pacing because it can aggregate a large number of results.
 
-AIOStreams may return magnet links, raw `infoHash` values, direct debrid links, direct hosting links, or mixed results from several addons and debrid services. Each result is handled independently.
+AIOStreams may return magnet links, raw `infoHash` values, direct debrid links, direct hosting links, or mixed results from several addons and debrid services. Each result is handled independently, and direct-stream redirects are followed when playback is requested.
 
-| Syncler version | AIOStreams recommendation |
-|---|---|
-| Stable `2.0.1.3.2 (v24421302)` | Leave the addons unconfigured whenever possible, so AIOStreams returns magnet-style results instead of direct links.  |
-| Beta `2.1.1.7 (v302010107)` or higher | AIOStreams can return magnet links and direct streams together, and any video redirects will be followed. |
+Because AIOStreams can take longer to return results, increase Repeated Calls if the first scrape returns fewer links than expected or if more links appear after refreshing the same title.
 
 ---
 
@@ -293,7 +285,7 @@ If private information is exposed during testing, rotate the affected credential
 
 | Issue | Recommended fix |
 |---|---|
-| Direct source fails with `Response code: 302` | Use Syncler beta `2.1.1.7 (v302010107)` or higher, or use an unconfigured debrid addon URL so the addon returns only magnet-style results. |
+| Direct source fails with `Response code: 302` | Install the required Syncler version listed at the top of this guide, then reinstall the Providra Express package. |
 | Direct source cannot be resolved | Open `Settings → Source → Resolving` and turn off `Skip resolving non-debrid sources`. |
 | Direct sources do not appear | Restart the local server, reinstall the default package, confirm the addon returned HTTP direct links or magnets, and temporarily turn off Smart Title Filtering. Enable logs only while troubleshooting. |
 | The second scrape returns more links | Increase Repeated Calls so plugins and AIOStreams have more time to return results. |
